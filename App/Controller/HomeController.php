@@ -1,8 +1,8 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/App/Controller/Controller.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/App/TCustomMVC/Request.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/App/Model/User.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/App/TCustomMVC/Controller.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/App/TCustomMVC/Request.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/App/Model/User.php';
 
 class HomeController extends Controller
 {
@@ -28,7 +28,8 @@ class HomeController extends Controller
         // get post login
         $user = User::parse($params);
 
-        self::redirectTo('/profile');
+        print_r($user->getCommentProperties());
+//        self::redirectTo('/profile');
 
     }
 

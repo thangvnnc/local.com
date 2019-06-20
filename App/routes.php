@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] .'/App/Controller/HomeController.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/App/Controller/HomeController.php';
 
 $router = new Router(new Request);
 
